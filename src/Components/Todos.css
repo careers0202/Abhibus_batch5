@@ -1,0 +1,10 @@
+.todo-item {
+    background: #90af90;
+    /* width: 200px; */
+    padding: 5px;
+    margin: 5px;
+}
+
+.strike {
+    text-decoration: line-through;
+}

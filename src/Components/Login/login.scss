@@ -1,0 +1,50 @@
+@import '../scss//variables.scss';
+
+.login {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid darkgray;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  text-align: center;
+  font-style: italic;
+}
+
+.loading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.6rem;
+}
+
+input {
+  /* height: 45px; */
+  border-radius: 5px;
+  border: 1px solid rgb(13, 0, 128);
+  margin: 10px 0;
+}
+
+.sec {
+  color: $red
+}
+
+.sec>h5 {
+  font-size: 24px;
+}
+
+/* .sec {
+    color: $red;
+    > h5 {
+      font-size: 24px;
+    }
+    > div {
+
+    }
+  } */

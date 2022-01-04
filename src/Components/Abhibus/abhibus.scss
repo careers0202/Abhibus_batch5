@@ -1,0 +1,279 @@
+@import '../scss/variables.scss';
+
+body {
+    margin: 0;
+    background: #f8f3f3;
+}
+
+.header {
+    background-color: #efefef;
+    position: sticky;
+    top: 0;
+}
+
+
+.nav-option a {
+    margin-right: 10px;
+    color: #5d5d5d;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+
+.tabs b {
+    background: $red;
+    color: white;
+    width: 100px;
+    padding: 5px;
+    border-radius: 20px;
+    font-weight: normal;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+
+
+// .top-section .text-center {
+//     color: $green
+// }
+// .top-section .tabs {
+//     border-radius: 5px;;
+// }
+
+// .top-section .tabs b {
+//     color: white;
+// }
+
+.top-section {
+    .text-center {
+        color: $green
+    }
+    .tabs {
+        border-radius: 5px;
+        b {
+            color: white; 
+        }
+    }
+}
+
+
+
+
+.input-container input {
+    height: 40px;
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.form-sec {
+    position: relative;
+    width: 100%;
+}
+
+.form-sec~button {
+    width: 150px;
+    height: 40px;
+    background: $red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+hr {
+    margin-top: 0;
+}
+
+.top-section {
+    background-image: url('../../imgs/abhibus.jpeg');
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.offers {
+    display: flex;
+    overflow: auto;
+    border: 1px solid $green;
+    padding: 20px;
+    background: white;
+}
+
+.offers img {
+    margin-right: 10px;
+}
+
+.body-section {
+    margin: 50px;
+}
+
+.faq {
+    background: #fff;
+    border: 1px solid darkgray;
+    padding: 10px 20px;
+}
+
+.chatbot {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+.form-sec {
+    position: relative;
+}
+
+.fa-location-arrow {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.form-sec~button:hover {
+    background: green;
+}
+
+.travelNote:link {
+    color: green;
+}
+
+/* visited link */
+.travelNote:visited {
+    color: $red;
+}
+
+/* mouse over link */
+.travelNote:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+.travelNote:active {
+    color: #0000FF;
+}
+
+.travel:link {
+    color: green;
+}
+
+/* visited link */
+.travel:visited {
+    color: $red;
+}
+
+/* mouse over link */
+.travel:hover {
+    color: #FF00FF;
+}
+
+/* selected link */
+.travel:active {
+    color: #0000FF;
+}
+
+.travelAdvisory {
+    background: #fff;
+    border: 1px solid darkgray;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.title::first-letter {
+    color: $red;
+    font-size: 50px;
+}
+
+.imp::first-line {
+    color: green;
+    font-weight: bold;
+}
+
+.faq h4::before {
+    content: 'Q).';
+    color: $red
+}
+
+.faq h4::after {
+    content: '\01F197';
+    background: yellow;
+    color: $red;
+}
+
+.faq h4::selection {
+    background-color: $red;
+}
+
+.footer {
+    padding: 10px;
+    background: lightgray;
+    /* display: block; */
+}
+
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 768px --- tablet */
+@media only screen and (min-width:768px) {
+    .input-container {
+        flex-direction: row;
+    }
+
+    .input-container input {
+        width: 100%;
+    }
+
+
+    .form-sec~button {
+        border-radius: 0;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    /* .footer {
+        display: flex;
+    } */
+}
+
+
+
+/* 992px --- desktop */
+@media only screen and (min-width:992px) {
+    .nav-option {
+        display: block;
+    }
+
+    /* header>span {
+        display: none;
+    } */
+
+    .form-sec {
+        width: 300px;
+    }
+
+    .input-container input {
+        width: 300px;
+    }
+}
+
+.error {
+    color: red;
+    text-align: center
+}
+
+.list-item {
+    border: 1px solid darkgray;
+}
